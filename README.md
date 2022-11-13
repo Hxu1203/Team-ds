@@ -10,6 +10,7 @@ What team has the strongest defense, midfield, and offense players?-Wilfred	✅
 
         -Can we quantify those statistics? 
         -How we define strongest?
+Do teams with stronger offense players score more goals? ANd do teams with stronger goalkeepers receive fewer goals?-Hanyang
 
 Create three more high level questions!
 
