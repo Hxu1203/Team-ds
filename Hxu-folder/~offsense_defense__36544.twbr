@@ -1,0 +1,972 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1005.1835                               -->
+<workbook original-version='18.1' source-build='2022.3.0 (20223.22.1005.1835)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='fifa_world_cup' inline='true' name='federated.0lr5usa13jodmm1ggpr6r085wvnh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='fifa_world_cup' name='textscan.0c3f7qt0ddf5fh19qz8uq1tb0n4b'>
+            <connection class='textscan' directory='C:/Users/Han/Desktop/DS311/Team-ds/sport' filename='fifa_world_cup.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0c3f7qt0ddf5fh19qz8uq1tb0n4b' name='fifa_world_cup.csv' table='[fifa_world_cup#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='home_team' ordinal='1' />
+            <column datatype='string' name='away_team' ordinal='2' />
+            <column datatype='string' name='home_team_continent' ordinal='3' />
+            <column datatype='string' name='away_team_continent' ordinal='4' />
+            <column datatype='integer' name='home_team_fifa_rank' ordinal='5' />
+            <column datatype='integer' name='away_team_fifa_rank' ordinal='6' />
+            <column datatype='integer' name='home_team_total_fifa_points' ordinal='7' />
+            <column datatype='integer' name='away_team_total_fifa_points' ordinal='8' />
+            <column datatype='integer' name='home_team_score' ordinal='9' />
+            <column datatype='integer' name='away_team_score' ordinal='10' />
+            <column datatype='string' name='tournament' ordinal='11' />
+            <column datatype='string' name='city' ordinal='12' />
+            <column datatype='string' name='country' ordinal='13' />
+            <column datatype='boolean' name='neutral_location' ordinal='14' />
+            <column datatype='string' name='shoot_out' ordinal='15' />
+            <column datatype='string' name='home_team_result' ordinal='16' />
+            <column datatype='string' name='home_team_goalkeeper_score' ordinal='17' />
+            <column datatype='string' name='away_team_goalkeeper_score' ordinal='18' />
+            <column datatype='string' name='home_team_mean_defense_score' ordinal='19' />
+            <column datatype='string' name='home_team_mean_offense_score' ordinal='20' />
+            <column datatype='string' name='home_team_mean_midfield_score' ordinal='21' />
+            <column datatype='string' name='away_team_mean_defense_score' ordinal='22' />
+            <column datatype='string' name='away_team_mean_offense_score' ordinal='23' />
+            <column datatype='string' name='away_team_mean_midfield_score' ordinal='24' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0c3f7qt0ddf5fh19qz8uq1tb0n4b' name='fifa_world_cup.csv' table='[fifa_world_cup#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='home_team' ordinal='1' />
+            <column datatype='string' name='away_team' ordinal='2' />
+            <column datatype='string' name='home_team_continent' ordinal='3' />
+            <column datatype='string' name='away_team_continent' ordinal='4' />
+            <column datatype='integer' name='home_team_fifa_rank' ordinal='5' />
+            <column datatype='integer' name='away_team_fifa_rank' ordinal='6' />
+            <column datatype='integer' name='home_team_total_fifa_points' ordinal='7' />
+            <column datatype='integer' name='away_team_total_fifa_points' ordinal='8' />
+            <column datatype='integer' name='home_team_score' ordinal='9' />
+            <column datatype='integer' name='away_team_score' ordinal='10' />
+            <column datatype='string' name='tournament' ordinal='11' />
+            <column datatype='string' name='city' ordinal='12' />
+            <column datatype='string' name='country' ordinal='13' />
+            <column datatype='boolean' name='neutral_location' ordinal='14' />
+            <column datatype='string' name='shoot_out' ordinal='15' />
+            <column datatype='string' name='home_team_result' ordinal='16' />
+            <column datatype='string' name='home_team_goalkeeper_score' ordinal='17' />
+            <column datatype='string' name='away_team_goalkeeper_score' ordinal='18' />
+            <column datatype='string' name='home_team_mean_defense_score' ordinal='19' />
+            <column datatype='string' name='home_team_mean_offense_score' ordinal='20' />
+            <column datatype='string' name='home_team_mean_midfield_score' ordinal='21' />
+            <column datatype='string' name='away_team_mean_defense_score' ordinal='22' />
+            <column datatype='string' name='away_team_mean_offense_score' ordinal='23' />
+            <column datatype='string' name='away_team_mean_midfield_score' ordinal='24' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_team]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>home_team</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[away_team]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>away_team</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_continent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_team_continent]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>home_team_continent</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_continent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[away_team_continent]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>away_team_continent</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_fifa_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[home_team_fifa_rank]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>home_team_fifa_rank</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_fifa_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[away_team_fifa_rank]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>away_team_fifa_rank</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_total_fifa_points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[home_team_total_fifa_points]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>home_team_total_fifa_points</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_total_fifa_points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[away_team_total_fifa_points]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>away_team_total_fifa_points</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[home_team_score]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>home_team_score</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[away_team_score]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>away_team_score</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tournament</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tournament]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>tournament</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neutral_location</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[neutral_location]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>neutral_location</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shoot_out</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shoot_out]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>shoot_out</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_result</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_team_result]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>home_team_result</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_goalkeeper_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_team_goalkeeper_score]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>home_team_goalkeeper_score</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_goalkeeper_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[away_team_goalkeeper_score]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>away_team_goalkeeper_score</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_mean_defense_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_team_mean_defense_score]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>home_team_mean_defense_score</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_mean_offense_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_team_mean_offense_score]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>home_team_mean_offense_score</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_mean_midfield_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_team_mean_midfield_score]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>home_team_mean_midfield_score</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_mean_defense_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[away_team_mean_defense_score]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>away_team_mean_defense_score</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_mean_offense_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[away_team_mean_offense_score]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>away_team_mean_offense_score</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_mean_midfield_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[away_team_mean_midfield_score]</local-name>
+            <parent-name>[fifa_world_cup.csv]</parent-name>
+            <remote-alias>away_team_mean_midfield_score</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Calculation1' datatype='real' name='[Calculation_2571555420971610112]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CORR([home_team_mean_offense_score],[home_team_score])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='fifa_world_cup.csv' datatype='table' name='[__tableau_internal_object_id__].[fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9]' role='measure' type='quantitative' />
+      <column caption='Away Team' datatype='string' name='[away_team]' role='dimension' type='nominal' />
+      <column caption='Away Team Continent' datatype='string' name='[away_team_continent]' role='dimension' type='nominal' />
+      <column caption='Away Team Fifa Rank' datatype='integer' name='[away_team_fifa_rank]' role='measure' type='quantitative' />
+      <column caption='Away Team Goalkeeper Score' datatype='string' name='[away_team_goalkeeper_score]' role='dimension' type='nominal' />
+      <column caption='Away Team Mean Defense Score' datatype='string' name='[away_team_mean_defense_score]' role='dimension' type='nominal' />
+      <column caption='Away Team Mean Midfield Score' datatype='string' name='[away_team_mean_midfield_score]' role='dimension' type='nominal' />
+      <column caption='Away Team Mean Offense Score' datatype='string' name='[away_team_mean_offense_score]' role='dimension' type='nominal' />
+      <column caption='Away Team Score' datatype='integer' name='[away_team_score]' role='measure' type='quantitative' />
+      <column caption='Away Team Total Fifa Points' datatype='integer' name='[away_team_total_fifa_points]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Home Team' datatype='string' name='[home_team]' role='dimension' type='nominal' />
+      <column caption='Home Team Continent' datatype='string' name='[home_team_continent]' role='dimension' type='nominal' />
+      <column caption='Home Team Fifa Rank' datatype='integer' name='[home_team_fifa_rank]' role='measure' type='quantitative' />
+      <column caption='Home Team Goalkeeper Score' datatype='string' name='[home_team_goalkeeper_score]' role='dimension' type='nominal' />
+      <column caption='Home Team Mean Defense Score' datatype='string' name='[home_team_mean_defense_score]' role='dimension' type='nominal' />
+      <column caption='Home Team Mean Midfield Score' datatype='string' name='[home_team_mean_midfield_score]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Home Team Mean Offense Score' datatype='string' default-role='measure' default-type='quantitative' name='[home_team_mean_offense_score]' role='dimension' type='nominal' />
+      <column caption='Home Team Result' datatype='string' name='[home_team_result]' role='dimension' type='nominal' />
+      <column caption='Home Team Score' datatype='integer' name='[home_team_score]' role='measure' type='quantitative' />
+      <column caption='Home Team Total Fifa Points' datatype='integer' name='[home_team_total_fifa_points]' role='measure' type='quantitative' />
+      <column caption='Neutral Location' datatype='boolean' name='[neutral_location]' role='dimension' type='nominal' />
+      <column caption='Shoot Out' datatype='string' name='[shoot_out]' role='dimension' type='nominal' />
+      <column caption='Tournament' datatype='string' name='[tournament]' role='dimension' type='nominal' />
+      <drill-paths>
+        <drill-path name='country, city'>
+          <field>[country]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='fifa_world_cup.csv' id='fifa_world_cup.csv_070BACC8A570418F893793B1678CCDB9'>
+            <properties context=''>
+              <relation connection='textscan.0c3f7qt0ddf5fh19qz8uq1tb0n4b' name='fifa_world_cup.csv' table='[fifa_world_cup#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='string' name='home_team' ordinal='1' />
+                  <column datatype='string' name='away_team' ordinal='2' />
+                  <column datatype='string' name='home_team_continent' ordinal='3' />
+                  <column datatype='string' name='away_team_continent' ordinal='4' />
+                  <column datatype='integer' name='home_team_fifa_rank' ordinal='5' />
+                  <column datatype='integer' name='away_team_fifa_rank' ordinal='6' />
+                  <column datatype='integer' name='home_team_total_fifa_points' ordinal='7' />
+                  <column datatype='integer' name='away_team_total_fifa_points' ordinal='8' />
+                  <column datatype='integer' name='home_team_score' ordinal='9' />
+                  <column datatype='integer' name='away_team_score' ordinal='10' />
+                  <column datatype='string' name='tournament' ordinal='11' />
+                  <column datatype='string' name='city' ordinal='12' />
+                  <column datatype='string' name='country' ordinal='13' />
+                  <column datatype='boolean' name='neutral_location' ordinal='14' />
+                  <column datatype='string' name='shoot_out' ordinal='15' />
+                  <column datatype='string' name='home_team_result' ordinal='16' />
+                  <column datatype='string' name='home_team_goalkeeper_score' ordinal='17' />
+                  <column datatype='string' name='away_team_goalkeeper_score' ordinal='18' />
+                  <column datatype='string' name='home_team_mean_defense_score' ordinal='19' />
+                  <column datatype='string' name='home_team_mean_offense_score' ordinal='20' />
+                  <column datatype='string' name='home_team_mean_midfield_score' ordinal='21' />
+                  <column datatype='string' name='away_team_mean_defense_score' ordinal='22' />
+                  <column datatype='string' name='away_team_mean_offense_score' ordinal='23' />
+                  <column datatype='string' name='away_team_mean_midfield_score' ordinal='24' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Def Sco(Bot 10)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Defense score vs. Away team(Bottom 10)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fifa_world_cup' name='federated.0lr5usa13jodmm1ggpr6r085wvnh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lr5usa13jodmm1ggpr6r085wvnh'>
+            <column-instance column='[away_team_score]' derivation='Avg' name='[avg:away_team_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Away Team Score' datatype='integer' name='[away_team_score]' role='measure' type='quantitative' />
+            <column caption='Home Team Mean Defense Score' datatype='string' name='[home_team_mean_defense_score]' role='dimension' type='nominal' />
+            <column-instance column='[home_team_mean_defense_score]' derivation='None' name='[none:home_team_mean_defense_score:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_defense_score:nk]'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([away_team_score])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:home_team_mean_defense_score:nk]' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:home_team_mean_defense_score:nk]' member='%null%' />
+                    <groupfilter function='member' level='[none:home_team_mean_defense_score:nk]' member='%null%' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_defense_score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_defense_score:nk]</rows>
+        <cols>[federated.0lr5usa13jodmm1ggpr6r085wvnh].[avg:away_team_score:qk]</cols>
+      </table>
+      <simple-id uuid='{2B023930-6B80-4ED1-A9BD-79FF4EFE398D}' />
+    </worksheet>
+    <worksheet name='Def Sco(Top 10)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Defense score vs. Away team(Top 10)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fifa_world_cup' name='federated.0lr5usa13jodmm1ggpr6r085wvnh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lr5usa13jodmm1ggpr6r085wvnh'>
+            <column-instance column='[away_team_score]' derivation='Avg' name='[avg:away_team_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Away Team Score' datatype='integer' name='[away_team_score]' role='measure' type='quantitative' />
+            <column caption='Home Team Mean Defense Score' datatype='string' name='[home_team_mean_defense_score]' role='dimension' type='nominal' />
+            <column-instance column='[home_team_mean_defense_score]' derivation='None' name='[none:home_team_mean_defense_score:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_defense_score:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([away_team_score])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:home_team_mean_defense_score:nk]' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:home_team_mean_defense_score:nk]' member='%null%' />
+                    <groupfilter function='member' level='[none:home_team_mean_defense_score:nk]' member='%null%' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_defense_score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_defense_score:nk]</rows>
+        <cols>[federated.0lr5usa13jodmm1ggpr6r085wvnh].[avg:away_team_score:qk]</cols>
+      </table>
+      <simple-id uuid='{A5389FFF-3CA5-4D0D-97FD-B449B0B745B2}' />
+    </worksheet>
+    <worksheet name='Offense score （Bot 10)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Offense score vs. Avg Goal</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fifa_world_cup' name='federated.0lr5usa13jodmm1ggpr6r085wvnh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lr5usa13jodmm1ggpr6r085wvnh'>
+            <column-instance column='[home_team_score]' derivation='Avg' name='[avg:home_team_score:qk]' pivot='key' type='quantitative' />
+            <column aggregation='CountD' caption='Home Team Mean Offense Score' datatype='string' default-role='measure' default-type='quantitative' name='[home_team_mean_offense_score]' role='dimension' type='nominal' />
+            <column caption='Home Team Score' datatype='integer' name='[home_team_score]' role='measure' type='quantitative' />
+            <column-instance column='[home_team_mean_offense_score]' derivation='None' name='[none:home_team_mean_offense_score:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_offense_score:nk]'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([home_team_score])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:home_team_mean_offense_score:nk]' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:home_team_mean_offense_score:nk]' member='%null%' />
+                    <groupfilter function='member' level='[none:home_team_mean_offense_score:nk]' member='%null%' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_offense_score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0lr5usa13jodmm1ggpr6r085wvnh].[avg:home_team_score:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_offense_score:nk]</rows>
+        <cols>[federated.0lr5usa13jodmm1ggpr6r085wvnh].[avg:home_team_score:qk]</cols>
+      </table>
+      <simple-id uuid='{6AD17289-0E86-4ED6-8E59-989ABE4171DB}' />
+    </worksheet>
+    <worksheet name='Offense score(Top 10)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Offense score vs. Avg Goal</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fifa_world_cup' name='federated.0lr5usa13jodmm1ggpr6r085wvnh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lr5usa13jodmm1ggpr6r085wvnh'>
+            <column-instance column='[home_team_score]' derivation='Avg' name='[avg:home_team_score:qk]' pivot='key' type='quantitative' />
+            <column aggregation='CountD' caption='Home Team Mean Offense Score' datatype='string' default-role='measure' default-type='quantitative' name='[home_team_mean_offense_score]' role='dimension' type='nominal' />
+            <column caption='Home Team Score' datatype='integer' name='[home_team_score]' role='measure' type='quantitative' />
+            <column-instance column='[home_team_mean_offense_score]' derivation='None' name='[none:home_team_mean_offense_score:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_offense_score:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([home_team_score])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:home_team_mean_offense_score:nk]' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:home_team_mean_offense_score:nk]' member='%null%' />
+                    <groupfilter function='member' level='[none:home_team_mean_offense_score:nk]' member='%null%' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_offense_score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0lr5usa13jodmm1ggpr6r085wvnh].[avg:home_team_score:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_offense_score:nk]</rows>
+        <cols>[federated.0lr5usa13jodmm1ggpr6r085wvnh].[avg:home_team_score:qk]</cols>
+      </table>
+      <simple-id uuid='{D864FE2D-5015-4036-ABF3-77BEFED34D91}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fifa_world_cup' name='federated.0lr5usa13jodmm1ggpr6r085wvnh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lr5usa13jodmm1ggpr6r085wvnh'>
+            <column caption='Away Team Score' datatype='integer' name='[away_team_score]' role='measure' type='quantitative' />
+            <column caption='Home Team' datatype='string' name='[home_team]' role='dimension' type='nominal' />
+            <column caption='Home Team Mean Defense Score' datatype='string' name='[home_team_mean_defense_score]' role='dimension' type='nominal' />
+            <column-instance column='[home_team]' derivation='None' name='[none:home_team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[home_team_mean_defense_score]' derivation='None' name='[none:home_team_mean_defense_score:nk]' pivot='key' type='nominal' />
+            <column-instance column='[away_team_score]' derivation='Sum' name='[sum:away_team_score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_defense_score:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:home_team_mean_defense_score:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:home_team_mean_defense_score:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:home_team_mean_defense_score:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_defense_score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team:nk]' value='60' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lr5usa13jodmm1ggpr6r085wvnh].[sum:away_team_score:qk]</rows>
+        <cols>([federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team_mean_defense_score:nk] / [federated.0lr5usa13jodmm1ggpr6r085wvnh].[none:home_team:nk])</cols>
+      </table>
+      <simple-id uuid='{A4F6145B-6EA4-4E2E-B7B7-C9368F7BE246}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7403B37D-F30B-4F8D-8F73-FB84F42C9AA0}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Offense score(Top 10)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7558FDF9-69F2-4618-9138-FBD6053A3591}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Offense score （Bot 10)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{953218B7-AEAE-4D0D-AE57-245C4C840C54}' />
+    </window>
+    <window class='worksheet' name='Def Sco(Top 10)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5E1CA3DB-0C41-4959-9CD2-CCED08A2956B}' />
+    </window>
+    <window class='worksheet' name='Def Sco(Bot 10)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8FC6E9F0-6210-4DBF-9AFD-5D0BE75B010B}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{18ADD0DB-BFE2-4435-9415-D34E4EAD9B68}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{694D2F7C-EF11-4769-93C2-2061C046E0A0}' />
+    </window>
+  </windows>
+</workbook>
